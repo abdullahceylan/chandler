@@ -28,7 +28,7 @@
     "appcenter-crashes": "1.7.1",
     "babel-core": "6.26.3",
     "babel-preset-es2015": "6.24.1",
-    "formik": "0.11.11",
+    "formik": "1.0.3",
     "frisbee": "2.0.5",
     "i18next": "11.5.0",
     "moment": "tqc/moment#no-dynamic-import",
