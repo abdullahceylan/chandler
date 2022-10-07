@@ -20,22 +20,24 @@
     "test:e2e": "detox test -c ios.sim.debug.iPhoneSE",
     "test:e2e:build": "detox build -c ios.sim.debug.iPhoneSE",
     "test:e2e:ci": "detox test",
-    "test:e2e:build:ci": "detox build"
+    "test:e2e:build:ci": "detox build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "appcenter": "1.7.1",
-    "appcenter-analytics": "1.7.1",
-    "appcenter-crashes": "1.7.1",
+    "appcenter": "1.13.0",
+    "appcenter-analytics": "1.13.0",
+    "appcenter-crashes": "1.13.0",
     "babel-core": "6.26.3",
     "babel-preset-es2015": "6.24.1",
     "formik": "0.11.11",
     "frisbee": "2.0.5",
-    "i18next": "11.6.0",
-    "moment": "tqc/moment#no-dynamic-import",
+    "i18next": "19.8.5",
+    "moment": "2.29.4",
     "react": "16.4.2",
-    "react-native": "0.55.4",
+    "react-native": "0.64.0",
     "react-native-actionsheet": "2.4.2",
-    "react-native-code-push": "5.4.1",
+    "react-native-code-push": "6.3.0",
     "react-native-device-info": "0.22.2",
     "react-native-keyboard-aware-scroll-view": "0.6.0",
     "react-native-navbar": "2.1.0",
@@ -43,7 +45,7 @@
     "react-native-searchbar": "1.15.0",
     "react-native-segmented-control-tab": "3.2.2",
     "react-native-splash-screen": "3.0.9",
-    "react-native-vector-icons": "4.6.0",
+    "react-native-vector-icons": "6.4.1",
     "react-navigation": "2.9.3",
     "react-redux": "5.0.7",
     "redux": "4.0.0",
@@ -51,7 +53,8 @@
     "redux-devtools-extension": "2.13.5",
     "redux-thunk": "2.2.0",
     "tslib": "1.9.3",
-    "typesafe-actions": "2.0.4"
+    "typesafe-actions": "2.0.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
@@ -139,5 +142,6 @@
         "name": "iPhone SE"
       }
     }
-  }
+  },
+  "snyk": true
 }
