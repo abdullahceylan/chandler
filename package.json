@@ -20,7 +20,9 @@
     "test:e2e": "detox test -c ios.sim.debug.iPhoneSE",
     "test:e2e:build": "detox build -c ios.sim.debug.iPhoneSE",
     "test:e2e:ci": "detox test",
-    "test:e2e:build:ci": "detox build"
+    "test:e2e:build:ci": "detox build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "appcenter": "1.7.1",
@@ -51,7 +53,8 @@
     "redux-devtools-extension": "2.13.5",
     "redux-thunk": "2.2.0",
     "tslib": "1.9.3",
-    "typesafe-actions": "2.0.4"
+    "typesafe-actions": "2.0.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
@@ -139,5 +142,6 @@
         "name": "iPhone SE"
       }
     }
-  }
+  },
+  "snyk": true
 }
